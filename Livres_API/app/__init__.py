@@ -17,4 +17,8 @@ def create_app():
     from app.books.routes import books_bp
     app.register_blueprint(books_bp, url_prefix="/books")
 
+    # import le blueprint pour auth 
+    from app.auth.routes import auth_bp
+    app.register_blueprint(auth_bp, url_prefix = "/auth")
+
     return app
