@@ -1,0 +1,7 @@
+--- Le fichier requirements 
+
+pip freeze > requirements.txt
+
+--- pour l'espace env 
+python -m venv nom_environnemnt 
+source nom_environnemnt/bin/activate 
