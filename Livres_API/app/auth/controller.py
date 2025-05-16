@@ -12,7 +12,7 @@ def register_user(request):
         return jsonify({"msg": "Nom et mot de passe requis"}), 400
 
     # Hash du mot de passe
-    hashed_pwd = generate_password_hash(data['pwd'], method='sha256')
+    hashed_pwd = generate_password_hash(data['pwd'], method='pbkdf2:sha256')
 
     # Insertion dans la base de données
     db = get_db()

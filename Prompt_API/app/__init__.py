@@ -17,4 +17,8 @@ def create_app():
     from app.prompts.routes import prompts_bp
     app.register_blueprint(prompts_bp, url_prefix="/prompts")
 
+    # IMportert les blueprints pour l'authentification
+    from app.auth.routes import auth_bp
+    app.register_blueprint(auth_bp, url_prefix="/auths")
+
     return app
