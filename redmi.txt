@@ -5,3 +5,29 @@ pip freeze > requirements.txt
 --- pour l'espace env 
 python -m venv nom_environnemnt 
 source nom_environnemnt/bin/activate 
+
+# les dependances à installer 
+
+pip install flask 
+pip install python-dotenv
+pip install flask-jwt-extended
+
+
+---- Pour les exemples 
+
+{
+  "titre": "Rédige une introduction captivante pour un roman de science-fiction",
+  "prix": 1200.00,
+  "etat": "en_attente",
+  "note_moyenne": 4.5
+}
+
+{
+    "nom":"Ben",
+    "pwd":"passer123",
+    "id_groupe": 3
+}
+
+### Le token 
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0NzQwOTEwNCwianRpIjoiMTk0YmYxYzQtZjZmZS00ZjYxLTg0NzAtYmU4Y2I1MmFkYzdlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzQ3NDA5MTA0LCJjc3JmIjoiMThhODQxODMtY2Y2ZC00NGI3LTk4NDMtMzliNTE2ZjMxYjVkIiwiZXhwIjoxNzQ3NDEwMDA0fQ.bVxN_bM4S04OpQzDXetYGtfxvbvRHH9JQNdIztjebQ8
