@@ -24,8 +24,7 @@ pip install flask-jwt-extended
 
 {
     "nom":"Ben",
-    "pwd":"passer123",
-    "id_groupe": 3
+    "pwd":"passer123"
 }
 
 ### Le token 

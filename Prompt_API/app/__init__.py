@@ -14,7 +14,7 @@ def create_app():
     init_db(app)
 
     #importer les blueprints pour les prompts visiteurs 
-    from app.prompts.routes import prompts_bp
+    from app.prompts_visiteurs.routes import prompts_bp
     app.register_blueprint(prompts_bp, url_prefix="/prompts")
 
     # IMportert les blueprints pour l'authentification
